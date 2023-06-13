@@ -16,22 +16,22 @@ string[] array = new string[] {"game", "12", "tyetre", "u", "234567", "11"};
 
 string[] OnlyThreeOrLess(string[] array)
 {
-    List<string> myArray = new List<string>();
+    List<string> exitArray = new List<string>();
 
     for(int i = 0; i < array.Length; i++)
     {
         if (array[i].Length <= 3)
         {
-            myArray.Add(array[i]);
+            exitArray.Add(array[i]);
         }
     }
 
-    foreach (var item in myArray)
+    foreach (var item in exitArray)
     {
         Console.Write($"{item} ");
     }
 
-    return myArray.ToArray();
+    return exitArray.ToArray();
 }
 
 OnlyThreeOrLess(array);
